@@ -1,8 +1,9 @@
 import 'reflect-metadata'
 import express, { NextFunction, Request, Response }  from 'express';
 import cors  from 'cors';
-import { routes } from './routes';
-import { AppError } from '@shared/errors/AppError';
+import routes from './routes';
+import AppError from '@shared/errors/AppError';
+import '@shared/typeorm';
 
 const app = express();
 
@@ -32,5 +33,5 @@ app.use(
 );
 
 app.listen(3000, () => {
-  console.log('Server started on port 3000!');
+  console.log('Server started on http://localhost:3000/');
 });
