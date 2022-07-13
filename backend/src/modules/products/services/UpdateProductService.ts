@@ -30,7 +30,6 @@ class UpdateProductService {
     product.nome = nome;
     product.preco = preco;
     product.quantidade = quantidade;
-    product.alterado_em = new Date(product.alterado_em.toString().replace(/-/g, '\/').replace(/T.+/, ''))
 
     await productsRepository.save(product);
 

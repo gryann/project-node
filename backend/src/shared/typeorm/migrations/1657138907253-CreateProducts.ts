@@ -14,7 +14,7 @@ export class CreateProducts1657138907253 implements MigrationInterface {
             default: 'uuid_generate_v4()',
           },
           {
-            name: 'name',
+            name: 'nome',
             type: 'varchar'
           },
           {
@@ -31,7 +31,7 @@ export class CreateProducts1657138907253 implements MigrationInterface {
             default: 'now()',
           },
           {
-            name: 'atualizado_em',
+            name: 'alterado_em',
             type: 'timestamp',
             default: 'now()',
           }
